@@ -17,3 +17,12 @@ If you want to give SQUIRREL a test run on a small data set, you can find the ra
 
 ## Known issues
 The underlying architecture of NanoJ relies on some OpenCL libraries for GPU-based processing that seem to disagree with some graphics cards. If your graphics card isn't compatible, then unfortunately you will find this out fairly quickly as Fiji will crash onces you click on any of the NanoJ-Core or NanoJ-SQUIRREL menu options :( We're working on a general fix for this, but in the interim I have made a version of SQUIRREL error mapping that does not do anything on the GPU. This is downloadable from https://github.com/superresolusian/NanoJ-SQUIRREL/releases/tag/v1.1-alpha, with a usage/installation note. Ironically, this is actually faster than the GPU-enabled version thanks to some clever maths from @uschmidt83, so don't worry about a loss of speed!
+
+
+## NanoJ-SQUIRREL in Python ##
+
+Exciting news! NanoJ-SQUIRREL image quality metrics are now accessible in Python through the [NanoPyx](https://github.com/HenriquesLab/NanoPyx) package. This integration brings the power and versatility of NanoJ-SQUIRREL to Python users, opening up new possibilities for analysis and integration within Python-based workflows.
+
+NanoPyx, seamlessly integrates NanoJ-SQUIRREL's image quality assessment capabilities into Python environments. With NanoPyx, users can now leverage NanoJ's high-performance analytical approach within their Python scripts, pipelines, and interactive sessions. Through NanoPyx, NanoJ-SQUIRREL image registration methods are also available as "codeless" Jupyter Notebooks and a [napari plugin](https://github.com/HenriquesLab/napari-NanoPyx).
+
+
